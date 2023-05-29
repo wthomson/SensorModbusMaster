@@ -51,7 +51,7 @@ modbus.float32FromRegister(0x04, 15, bigEndian);
 // Retrieve data from a read/write holding register
 // Holding registers are called with 0x03
 // Retrieve a signed 16-big endian float from holding register 12
-modbus.int16FromRegister(0x03, 12, littleEndian);
+modbus.int16FromRegister(0x03, 12, bigEndian);
 
 // Write the value "56" to holding register 20 as a little-endian unsigned 16-bit integer
 modbus.uint16ToRegister(20, 56, littleEndian);
